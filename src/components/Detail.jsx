@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import Nav from './Nav'
 
 const Detail = () => {
     const explore = true
     const details = JSON.parse(localStorage.getItem('key'))
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     // console.log(details)
     return (
         <div className='bg-[#f1e9da] min-h-screen'>
