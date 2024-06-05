@@ -12,7 +12,7 @@ const Nav = () => {
             <div className='flex gap-8'>
                 <ul className="flex space-x-4">
                     <li>
-                        <a href="/" className="text-gray-300 hover:text-white">
+                        <a href="https://github.com/Pav125/Food-Recipe" className="text-gray-300 hover:text-white">
                             GitHub
                         </a>
                     </li>
