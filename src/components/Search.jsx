@@ -24,25 +24,30 @@ const Search = () => {
         setLoading(true)
         console.log(search);
 
-        try {
-            const response = await api.get(``, {
-                params: {
-                    q: search,
-                    app_id: YOUR_APP_ID,
-                    app_key: YOUR_APP_KEY,
-                    from: 0,
-                    to: 12,
-                    calories: '591-722'
-                }
-            });
-            setData(response.data.hits)
+        if (search.length !== 0 ){
+            try {
+                const response = await api.get(``, {
+                    params: {
+                        q: search,
+                        app_id: YOUR_APP_ID,
+                        app_key: YOUR_APP_KEY,
+                        from: 0,
+                        to: 12,
+                        calories: '591-722'
+                    }
+                });
+                setData(response.data.hits)
+                setLoading(false)
+                setShow(true)
+    
+                // console.log(data)
+                // response.data.hits[0].recipe.ingredientLines[0]
+            } catch (error) {
+                console.error(error);
+            }
+        }else{
+            alert('Please enter a valid search term')
             setLoading(false)
-            setShow(true)
-
-            // console.log(data)
-            // response.data.hits[0].recipe.ingredientLines[0]
-        } catch (error) {
-            console.error(error);
         }
     }
 
