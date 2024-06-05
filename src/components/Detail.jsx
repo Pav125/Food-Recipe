@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Nav from './Nav'
 
 const Detail = () => {
+    const explore = true
     const details = JSON.parse(localStorage.getItem('key'))
     console.log(details)
     return (
         <div className='bg-[#f1e9da] min-h-screen'>
-            <Nav />
+            <Nav explore={explore} />
             <div className='flex flex-col md:flex-row m-4 md:m-8 gap-6 bg-[#f1e9da]'>
                 <img src={details.image} alt={details.label} className='w-full md:w-1/3 object-cover' />
                 <div className='flex flex-col gap-4 md:gap-6 bg-[#f1e9da]'>
