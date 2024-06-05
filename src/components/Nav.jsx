@@ -16,7 +16,7 @@ const Nav = ({ explore }) => {
                         explore && (
                             <li>
                                 <div className="text-[#f1e9da] font-semibold hover:text-white">
-                                    <Link to="/explore">Explore</Link>
+                                    <Link to="/search">Search</Link>
                                 </div>
                             </li>
                         )
