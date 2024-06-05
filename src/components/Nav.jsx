@@ -7,7 +7,7 @@ const Nav = ({ explore }) => {
         <nav className='flex justify-between p-4 text-white '>
             <div className='flex items-center justify-center'>
                 <img src={logo} width={30} height={30} />
-                <Link className='text-xl font-semibold font-mono ml-2' to='/'>Sunday recipes</Link>
+                <Link className='text-xl font-semibold font-mono ml-2' to='/'>SundayFlavors</Link>
             </div>
             <div className='flex gap-8 items-center justify-center'>
                 <ul className="flex space-x-4">
