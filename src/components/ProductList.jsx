@@ -7,7 +7,7 @@ const ProductList = ({ data }) => {
 
             {
                 data.map((recipesList) => {
-                    console.log(recipesList);
+                    // console.log(recipesList);
                     const recipe = recipesList.recipe
                     return (
                         <ProductCard key={recipe.label} details={recipe} />

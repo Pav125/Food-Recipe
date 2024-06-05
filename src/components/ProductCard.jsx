@@ -6,7 +6,7 @@ const ProductCard = ({ details}) => {
     const navigate = useNavigate()
 
     const handleClick = () => {
-        console.log("Product Card Clicked");
+        // console.log("Product Card Clicked");
         localStorage.setItem('key', JSON.stringify(details))
         navigate(`/detail/${details.label}`)
     }

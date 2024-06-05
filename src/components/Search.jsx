@@ -22,7 +22,7 @@ const Search = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true)
-        console.log(search);
+        // console.log(search);
 
         if (search.length !== 0 ){
             try {
