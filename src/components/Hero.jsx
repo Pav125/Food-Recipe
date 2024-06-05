@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <>
     <Nav explore={explore} />
-    <header className='flex flex-col lg:flex-row items-center justify-center h-screen mx-8 lg:mt-0'>
+    <header className='flex flex-col lg:flex-row items-center justify-center h-screen mx-8 lg:mt-0 sm:mt-2'>
       <div className='text-center lg:text-left lg:w-1/2 sm:order-last lg:order-first'>
         <div className='text-3xl lg:text-8xl font-medium font-anton text-[#f1e9da]'>
           FIND YOUR CRAVINGS HERE 
