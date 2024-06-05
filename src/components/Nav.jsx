@@ -9,20 +9,20 @@ const Nav = ({ explore }) => {
                 <img src={logo} width={30} height={30} />
                 <Link className='text-xl font-semibold font-mono ml-2' to='/'>Sunday recipes</Link>
             </div>
-            <div className='flex gap-8'>
+            <div className='flex gap-8 items-center justify-center'>
                 <ul className="flex space-x-4">
 
                     {
                         explore && (
                             <li>
-                                <a href="/search" className="text-[#f1e9da] hover:text-white">
+                                <a href="/search" className="text-[#f1e9da] font-semibold hover:text-white">
                                     Explore
                                 </a>
                             </li>
                         )
                     }
                     <li>
-                        <a href="https://github.com/Pav125/Food-Recipe" target='_blank' className="text-[#f1e9da] hover:text-white mr-4">
+                        <a href="https://github.com/Pav125/Food-Recipe" target='_blank' className="text-[#f1e9da] font-semibold hover:text-white mr-4">
                             GitHub
                         </a>
                     </li>

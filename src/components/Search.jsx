@@ -50,9 +50,9 @@ const Search = () => {
         <>
             <Nav />
             <br />
-            <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-col justify-center items-center m-4'>
                 <h1 className='text-white text-xl '>
-                    Search the recipe you want to treat yourself with
+                    Search the recipe you want to treat yourself
                 </h1>
                 <br />
                 <form onSubmit={(e) => handleSubmit(e)}>
@@ -63,7 +63,7 @@ const Search = () => {
                         onChange={(e) => setSearch(e.target.value)}
                     />
                     <input 
-                        className='px-4 py-1.5 bg-black text-[#f1e9da] hover:bg-yellow-500 hover:text-black rounded-tr-lg rounded-br-lg'
+                        className='px-4 py-1.5 bg-black text-[#f1e9da] hover:bg-green-800 hover:text-white active:bg-yellow-500 rounded-tr-lg rounded-br-lg'
                         type="submit"
                         value={
                             loading ? 'searching..' : 'search'

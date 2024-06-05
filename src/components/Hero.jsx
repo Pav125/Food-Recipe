@@ -4,10 +4,11 @@ import Nav from './Nav';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
+  const explore = true
   return (
     <>
-    <Nav/>
-    <header className='flex flex-col lg:flex-row items-center justify-center h-screen mx-8 mt-5 lg:mt-0'>
+    <Nav explore={explore} />
+    <header className='flex flex-col lg:flex-row items-center justify-center h-screen mx-8 lg:mt-0'>
       <div className='text-center lg:text-left lg:w-1/2 sm:order-last lg:order-first'>
         <div className='text-3xl lg:text-8xl font-medium font-anton text-[#f1e9da]'>
           FIND YOUR CRAVINGS HERE 
