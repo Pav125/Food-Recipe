@@ -19,10 +19,6 @@ Welcome to SundayFlavors, a website for exploring and discovering delicious reci
 
 Check out the live project [here](https://food-recipe-eight-psi.vercel.app/).
 
-## Screenshots
-
-![Screenshot 1](screenshots/screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
 
 ## Setup Instructions
 
